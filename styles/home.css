@@ -1,0 +1,130 @@
+.banner {
+  width: 100%;
+  height: 605px;
+  background: url("../assets/banner.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-cover {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.banner-info {
+  max-width: 827px;
+  width: 100%;
+  padding: 108px 0 0 237px;
+}
+.heading {
+  max-width: 457px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-info h1,
+p {
+  color: #ffffff;
+}
+.banner-btn {
+  margin-top: 75px;
+  display: flex;
+  gap: 77px;
+}
+.banner-btn button {
+  max-width: 246px;
+  padding: 27px 33px;
+  cursor: pointer;
+}
+
+.banner-btn button:first-child {
+  background-color: var(--greenColor);
+  border: 2px solid var(--greenColor);
+}
+.banner-btn button a {
+  color: white;
+}
+.banner-btn button:last-child {
+  border: 2px solid var(--greenColor);
+  background-color: transparent;
+}
+.home-main {
+  width: 100%;
+  margin-top: 75px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.about-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 105px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row {
+  display: flex;
+  gap: 324px;
+}
+.row div {
+  max-width: 320px;
+  width: 100%;
+}
+.about-info-wrapper p {
+  color: #000000;
+}
+.home-footer {
+  height: 147px;
+  margin-top: 75px;
+  text-align: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-footer button {
+  max-width: 271px;
+  width: 100%;
+  height: 43px;
+  margin-top: 16px;
+  background-color: var(--greenColor);
+  border: 1px solid var(--greenColor);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .banner-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-info {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .row {
+    gap: 50px;
+  }
+  .banner-btn {
+    gap: 30px;
+  }
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 25px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .banner-btn button:last-child {
+    display: none;
+  }
+}

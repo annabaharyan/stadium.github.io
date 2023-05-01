@@ -1,0 +1,33 @@
+.contact-main {
+  width: 100%;
+  margin-top: 97px;
+  text-align: center;
+}
+.contact-main-info,
+.contact-main form {
+  max-width: 1080px;
+  width: 100%;
+  margin: auto;
+}
+.contact-main-info {
+  color: #101010;
+}
+.contact-main form {
+  margin: 67px auto 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.contact-main input,
+.contact-main textarea {
+  padding: 15px;
+  border: 1px solid #707070;
+}
+.contact-main textarea {
+  resize: none;
+}
+@media (max-width: 584px) {
+  .contact-main {
+    margin-top: 30px;
+  }
+}
