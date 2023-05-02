@@ -46,7 +46,7 @@ footer {
   display: none;
   cursor: pointer;
 }
-.navbar ul {
+.navbar .navMenu {
   display: flex;
   width: 70%;
   gap: 70px;
@@ -118,13 +118,49 @@ input:focus,
 textarea:focus {
   outline-color: var(--greenColor);
 }
+.scale-in-top {
+	-webkit-animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
 
 @media (max-width: 584px) {
   .navbar {
     padding: 7px;
     font-size: 16px;
   }
-  .navbar ul {
+  .navbar .navMenu {
     gap: 19px;
     justify-content: center;
   }
@@ -141,15 +177,20 @@ textarea:focus {
     height: 50px;
     font-size: 16px;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .navbar .logo {
-    width: 50%;
+    width: 85%;
   }
-  .navbar ul {
+  .navbar .navMenu {
     display: none;
   }
   .menu {
-    display: block;
+    width: 10%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center
   }
   .line {
     width: 90px;
@@ -174,5 +215,16 @@ textarea:focus {
   }
   p {
     font-size: 14px;
+  }
+  .navbar .navMenu.open {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+ 
+
+  }
+  .navbar.ul-opened{
+    height: fit-content;
+    gap: 10px;
   }
 }
