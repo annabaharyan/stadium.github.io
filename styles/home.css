@@ -98,9 +98,9 @@ p {
 }
 
 .tracking-in-contract-bck-bottom {
-  -webkit-animation: tracking-in-contract-bck-bottom 1s
+  -webkit-animation: tracking-in-contract-bck-bottom 0.5s
     cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-contract-bck-bottom 1s
+  animation: tracking-in-contract-bck-bottom 0.5s
     cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
