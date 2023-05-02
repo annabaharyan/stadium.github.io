@@ -11,6 +11,7 @@ body {
 }
 :root {
   --greenColor: #178a1f;
+  --lightGreenColor: #59a05e;
 }
 .header {
   width: 100%;
@@ -107,7 +108,17 @@ button {
   background-color: var(--greenColor);
   border: 1px solid var(--greenColor);
   color: white;
+  transition: all 1s ease-in;
 }
+button:hover {
+  transform: scaleY(1.1);
+  background-color: var(--lightGreenColor);
+}
+input:focus,
+textarea:focus {
+  outline-color: var(--greenColor);
+}
+
 @media (max-width: 584px) {
   .navbar {
     padding: 7px;
@@ -161,8 +172,7 @@ button {
     width: 40px;
     height: 40px;
   }
-  p{
+  p {
     font-size: 14px;
   }
-  
 }
