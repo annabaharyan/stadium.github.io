@@ -110,6 +110,9 @@ button {
   color: white;
   transition: all 1s ease-in;
 }
+button a{
+  color: #ffffff;
+}
 button:hover {
   transform: scaleY(1.1);
   background-color: var(--lightGreenColor);
