@@ -110,9 +110,7 @@ button {
   color: white;
   transition: all 1s ease-in;
 }
-button a{
-  color: #ffffff;
-}
+
 button:hover {
   transform: scaleY(1.1);
   background-color: var(--lightGreenColor);
@@ -122,38 +120,38 @@ textarea:focus {
   outline-color: var(--greenColor);
 }
 .scale-in-top {
-	-webkit-animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
- @-webkit-keyframes scale-in-top {
+@-webkit-keyframes scale-in-top {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
 }
 @keyframes scale-in-top {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
 }
@@ -193,7 +191,7 @@ textarea:focus {
     display: flex;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
   .line {
     width: 90px;
@@ -223,10 +221,8 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     order: 1;
- 
-
   }
-  .navbar.ul-opened{
+  .navbar.ul-opened {
     height: fit-content;
     gap: 10px;
   }

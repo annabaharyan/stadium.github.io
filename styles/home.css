@@ -94,9 +94,10 @@ p {
   margin-top: 16px;
   background-color: var(--greenColor);
   border: 1px solid var(--greenColor);
-  color: white;
 }
-
+.home-footer button a{
+  color: #ffffff;
+}
 .tracking-in-contract-bck-bottom {
   -webkit-animation: tracking-in-contract-bck-bottom 0.5s
     cubic-bezier(0.215, 0.61, 0.355, 1) both;
