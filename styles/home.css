@@ -95,7 +95,7 @@ p {
   background-color: var(--greenColor);
   border: 1px solid var(--greenColor);
 }
-.home-footer button a{
+.home-footer button a {
   color: #ffffff;
 }
 .tracking-in-contract-bck-bottom {
@@ -169,5 +169,8 @@ p {
   }
   .banner-btn button:last-child {
     display: none;
+  }
+  .home-footer button {
+    width: 65%;
   }
 }
