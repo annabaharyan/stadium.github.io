@@ -28,7 +28,7 @@
 
 .banner-info h1,
 p {
-  color: #ffffff;
+  color:transparent;
 }
 .banner-btn {
   margin-top: 75px;
@@ -98,43 +98,45 @@ p {
 .home-footer button a {
   color: #ffffff;
 }
-.tracking-in-contract-bck-bottom {
-  -webkit-animation: tracking-in-contract-bck-bottom 0.5s
-    cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-contract-bck-bottom 0.5s
-    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+.slideDown,
+.slideUp {
+  position: relative;
+  opacity: 0;
 }
 
-@-webkit-keyframes tracking-in-contract-bck-bottom {
+.slideDown {
+  top: -40px;
+  left: 5px;
+  animation: slideDown ease 0.4s forwards 0.2s;
+}
+
+.slideUp {
+  top: 40px;
+  left: 10px;
+  animation: slideUp ease 0.5s forwards 0.4s;
+}
+
+@keyframes slideUp {
   0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px) translateY(300px);
-    transform: translateZ(400px) translateY(300px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
+    transform: translateY(0);
+    color: #ffffff;
   }
   100% {
-    -webkit-transform: translateZ(0) translateY(0);
-    transform: translateZ(0) translateY(0);
+    transform: translateY(-40px);
     opacity: 1;
+    color: #ffffff;
   }
 }
-@keyframes tracking-in-contract-bck-bottom {
+
+@keyframes slideDown {
   0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px) translateY(300px);
-    transform: translateZ(400px) translateY(300px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
+    transform: translateY(0);
+    color: #ffffff;
   }
   100% {
-    -webkit-transform: translateZ(0) translateY(0);
-    transform: translateZ(0) translateY(0);
+    transform: translateY(40px);
     opacity: 1;
+    color: #ffffff;
   }
 }
 
@@ -161,6 +163,12 @@ p {
   }
 }
 @media (max-width: 375px) {
+  .banner {
+    height: 450px;
+  }
+  .home-main {
+    margin-top: 45px;
+  }
   h1 {
     font-size: 25px;
   }
@@ -174,3 +182,5 @@ p {
     width: 65%;
   }
 }
+
+

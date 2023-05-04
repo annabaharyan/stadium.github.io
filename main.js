@@ -11,13 +11,18 @@ function openMenu() {
   navbar.classList.add("ul-opened");
 }
 menu.addEventListener("click", openMenu);
-function typeText(text, i = 0) {
-  if (i < text.length) {
-    document.querySelector(".p-text").innerHTML += text[i];
-    setTimeout(function () {
-      typeText(text, i + 1);
-    }, 10);
+
+function showSection() {
+  let show = document.querySelectorAll(".show");
+  for (let i = 0; i < show.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = show[i].getBoundingClientRect().top;
+    let elementVisible = 100;
+    if (elementTop < windowHeight - elementVisible) {
+      show[i].classList.add("active");
+    } else {
+      show[i].classList.remove("active");
+    }
   }
 }
-
-typeText("Keep track of stadiums that you have visited. Find out how many stadiums you've been to across the leagues.")
+window.addEventListener("scroll", showSection);

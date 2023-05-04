@@ -192,3 +192,14 @@ textarea:focus {
     gap: 10px;
   }
 }
+
+.show{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.show.active{
+  transform: translateY(0);
+  opacity: 1;
+}
